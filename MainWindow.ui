@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Guitar</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="GarphicsView" name="graphicsView"/>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" rowspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QComboBox" name="rootComboBox"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Root Note</string>
+            </property>
+            <property name="buddy">
+             <cstring>rootComboBox</cstring>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QComboBox" name="scaleComboBox"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Scale Name</string>
+            </property>
+            <property name="buddy">
+             <cstring>scaleComboBox</cstring>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QComboBox" name="tuningComboBox"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Tuning</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="boxPatternRadioButton">
+          <property name="text">
+           <string>Box Pattern</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="threeNotesRadioButton">
+          <property name="text">
+           <string>Three Notes Per String</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="fourNotesRadioButton">
+          <property name="text">
+           <string>Four Notes Per Sting</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="oneStringRadioButton">
+          <property name="text">
+           <string>One String</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="firstPushButton">
+          <property name="text">
+           <string>Show First</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="prevPushButton">
+            <property name="text">
+             <string>Previous</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nextPushButton">
+            <property name="text">
+             <string>Next</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="allPushButton">
+          <property name="text">
+           <string>Show All</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2" rowspan="2">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0" rowspan="2">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="2" rowspan="2">
+       <widget class="QPushButton" name="startAnimPushButton">
+        <property name="text">
+         <string>Start Animation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" rowspan="2">
+       <widget class="QPushButton" name="closePushButton">
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="stopAnimPushButton">
+        <property name="text">
+         <string>Stop Animation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCompare"/>
+    <addaction name="actionSave_To_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCompare">
+   <property name="text">
+    <string>Compare</string>
+   </property>
+  </action>
+  <action name="actionSave_To_File">
+   <property name="text">
+    <string>Save To File</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GarphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>GarphicsView.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>graphicsView</tabstop>
+  <tabstop>rootComboBox</tabstop>
+  <tabstop>scaleComboBox</tabstop>
+  <tabstop>boxPatternRadioButton</tabstop>
+  <tabstop>threeNotesRadioButton</tabstop>
+  <tabstop>fourNotesRadioButton</tabstop>
+  <tabstop>oneStringRadioButton</tabstop>
+  <tabstop>firstPushButton</tabstop>
+  <tabstop>prevPushButton</tabstop>
+  <tabstop>nextPushButton</tabstop>
+  <tabstop>allPushButton</tabstop>
+  <tabstop>startAnimPushButton</tabstop>
+  <tabstop>stopAnimPushButton</tabstop>
+  <tabstop>closePushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closePushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>566</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>521</x>
+     <y>549</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>firstPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>drawFirstPos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>prevPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>drawPrevPos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>706</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>603</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>drawNextPos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>787</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>792</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>allPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>drawAllPos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>382</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startAnimPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startAnimation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>789</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>447</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopAnimPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stopAnimation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>789</x>
+     <y>569</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>connect()</signal>
+  <slot>drawFirstPos()</slot>
+  <slot>drawPrevPos()</slot>
+  <slot>drawNextPos()</slot>
+  <slot>startAnimation()</slot>
+  <slot>stopAnimation()</slot>
+  <slot>drawAllPos()</slot>
+ </slots>
+</ui>
