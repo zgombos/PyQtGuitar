@@ -1,5 +1,6 @@
 # PyQtGuitar
-A guitar fretboard to learn the guitar scales written in PyQt.
+A guitar fretboard to learn the guitar scales.
 
-Python 3.5.1
-PyQt 5.7.0
+Written in:
+- Python 3.5.1
+- PyQt 5.7.0
